@@ -42,5 +42,10 @@ def over?(board)
   won?(board) || draw?(board) || full?(board)
 end
 
-
+def winner(board)
+  if board[win?(board)[0] == "X"]
+    return "X"
+  end
+  "O"
+end
 
